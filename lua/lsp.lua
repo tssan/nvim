@@ -16,7 +16,6 @@ require('mason-lspconfig').setup({
         'pylyzer',
         'pyre',
         'pyright',
-        'lua_ls',
         'rust_analyzer',
         'bashls',
         'css_variables',
