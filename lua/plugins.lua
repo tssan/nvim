@@ -37,5 +37,14 @@ require("lazy").setup({
 		version = "v2.*",
 	},
     "tanvirtin/monokai.nvim",
+    -- LSP
+    "williamboman/mason.nvim",
+	"williamboman/mason-lspconfig.nvim",
+	"neovim/nvim-lspconfig",
+    -- treesitter
+    {
+        "nvim-treesitter/nvim-treesitter",
+        build = ":TSUpdate",
+    },
 })
 
