@@ -12,10 +12,10 @@ require('mason-lspconfig').setup({
     -- A list of servers to automatically install if they're not already installed
     ensure_installed = {
         'ast_grep',
+        'pyright',
         'pylsp',
         'pylyzer',
         'pyre',
-        'pyright',
         'rust_analyzer',
         'bashls',
         'css_variables',
