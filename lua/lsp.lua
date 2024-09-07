@@ -160,3 +160,14 @@ lspconfig.tailwindcss.setup({
     filetypes = { "html", "css", "javascript" },
 })
 
+lspconfig.ruby_lsp.setup({
+    on_attach = on_attach,
+    init_options = {
+        settings = {
+            args = {
+                "--ignore=E501",
+            }
+        }
+    }
+})
+
