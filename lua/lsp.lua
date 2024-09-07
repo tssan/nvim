@@ -13,9 +13,9 @@ require('mason-lspconfig').setup({
     ensure_installed = {
         'ast_grep',
         'pyright',
-        'pylsp',
-        'pylyzer',
-        'pyre',
+        --'pylsp',
+        --'pylyzer',
+        --'pyre',
         'rust_analyzer',
         'bashls',
         'css_variables',
@@ -30,6 +30,7 @@ require('mason-lspconfig').setup({
         'ruff_lsp',
         'svelte',
         'eslint',
+        'tailwindcss',
     },
 })
 
@@ -151,3 +152,11 @@ lspconfig.ruby_lsp.setup({
 lspconfig.clangd.setup({
 	on_attach = on_attach,
 })
+
+
+lspconfig.tailwindcss.setup({
+    on_attach = on_attach,
+    cmd = { "tailwindcss-language-server", "--stdio" },
+    filetypes = { "html", "css", "javascript" },
+})
+
